@@ -1,4 +1,4 @@
-# Xcode default keyboard shortcuts
+# <img style="float: right;"  src="https://raw.githubusercontent.com/igorkotkovets/xcode-keyboard-shortcuts/master/Xcode-icon.png" width="50">Xcode default keyboard shortcuts 
 Useful keyboard shortcuts for Xcode IDE for everyday usage
 
 
