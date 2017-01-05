@@ -19,3 +19,6 @@ Useful keyboard shortcuts for Xcode IDE for everyday usage
 ## Debugging
 * Cmd+\ - set/unset breakpoint
 
+## Simulator
+* Cmd+Shift+H - simulate pressing Home button
+
