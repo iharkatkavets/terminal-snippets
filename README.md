@@ -10,6 +10,7 @@ Useful keyboard shortcuts for Xcode IDE for everyday usage
 * Cmd+Alt+0 - show/hide current file inspector(right panel)
 * Cmd+Alt+Enter/Cmd+Enter - show/hide assistent at right(class interfaces etc)
 * Cmd+Shift+Y - show/hide debug console
+* Control+Command+Shift+/ - show context documentation, analog Alt+Click
 
 
 ## Editing 
