@@ -6,11 +6,12 @@ Useful keyboard shortcuts for Xcode IDE for everyday usage
 * Ctrl+1...6 - switching in files catalog and methods(under editing window)
 * Cmd+Shift+J/Cmd+J - switching focus between navigator panel(left panel) and editing window
 * Cmd+0 - show/hide navigator panel
-* Cmd+Option(Alt)+J - files searching in the navigator panel
-* Cmd+Alt+0 - show/hide current file inspector(right panel)
-* Cmd+Alt+Enter/Cmd+Enter - show/hide assistent at right(class interfaces etc)
+* Cmd+Option+J - files searching in the navigator panel
+* Cmd+Option+0 - show/hide current file inspector(right panel)
+* Cmd+Option+Enter/Cmd+Enter - show/hide assistent at right(class interfaces etc)
 * Cmd+Shift+Y - show/hide debug console
-* Control+Command+Shift+/ - show context documentation, analog Alt+Click
+* Ctrl+Cmd+Shift+/ - show context documentation, analog Option+Click
+* Ctrl+Cmd+J - jump to method definition
 
 
 ## Editing 
