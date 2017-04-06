@@ -8,9 +8,9 @@ $ tail -f FILE
 ```
 
 #### Zip
-Zip file with password protecting
+Zip files with password protecting
 ```bash
-$ zip -er ZIP.zip file1 file2
+$ zip -er ZIP.zip file1 dir1 file2
 ```
 
 
