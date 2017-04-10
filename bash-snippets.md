@@ -1,10 +1,14 @@
 Bash snippets
 
 
-### Files editing 
+#### Files editing 
 Display file changes in real time
 ```bash
 $ tail -f FILE
+```
+Remve new line and escape " symbols in the file
+```bash
+$ cat ORIGINFILE.TXT | tr -d '\n' | sed 's/"/\\"/g' > NEWFILE.TXT
 ```
 
 #### Zip
