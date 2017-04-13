@@ -6,9 +6,15 @@ Display file changes in real time
 ```bash
 $ tail -f FILE
 ```
-Remve new line and escape " symbols in the file
+Remove new line and escape " symbols in the file
 ```bash
 $ cat ORIGINFILE.TXT | tr -d '\n' | sed 's/"/\\"/g' > NEWFILE.TXT
+```
+
+Find a string recursively at path
+```bash
+$ grep -ir SEARCHABLE_STRING PATH
+$ grep -A NUMBER_OF_LINES_AFTER -ir SEARCHABLE_STRING PATH
 ```
 
 #### Zip
