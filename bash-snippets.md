@@ -23,6 +23,10 @@ Zip files with password protecting
 $ zip -er ZIP.zip file1 dir1 file2
 ```
 
+#### Emacs
+Copy from Emacs to OS X clipboard:
+`select region then M-| pbcopy RET`
+
 
 
 
