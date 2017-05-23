@@ -1,5 +1,7 @@
 ```objective-c
 // stash a view (0x7f84c74ca870 address)
+e UIView *$cell = (UIView *)[0x7f84c74ca870 superview]
+// set a new frame
 e (void)[$cell setFrame:(CGRect){0.f, 324.f, 10.f, 54.f}]
 // set a new frame
 e (void)[$cell setFrame:(CGRect){0.f, 324.f, 10.f, 54.f}]
