@@ -27,6 +27,9 @@ $ zip -er ZIP.zip file1 dir1 file2
 Copy from Emacs to OS X clipboard:
 `select region then M-| pbcopy RET`
 
+#### Midnight Commander
+Open directory in another panel `ESC+o`
+
 
 
 
