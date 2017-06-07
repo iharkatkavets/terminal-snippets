@@ -42,6 +42,13 @@ Copy from Emacs to OS X clipboard:
 `q` - quit status buffer<br/>
 `?` - get help!<br/>
 
+#### Emacs-Magit
+
+
+| Emacs                                                                | Emacs-Magit                                              | Vim  |
+| -------------------------------------------------------------------- |:--------------------------------------------------------:| -------------------------------------------------:|
+| `C-x 0` - delete the selected window (`delete-window`)               | `M-x magit-process-buffer` - to show the output of recently run git commands         | $1600 |
+
 #### Midnight Commander
 Open directory in another panel `ESC+o`
 
