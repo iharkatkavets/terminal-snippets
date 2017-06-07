@@ -27,20 +27,20 @@ $ zip -er ZIP.zip file1 dir1 file2
 Copy from Emacs to OS X clipboard:
 
 #### Git-Emacs
-`select region then M-| pbcopy RET`
-`m` - mark the file the cursor is on ATM
-`M` - mark all files in buffer
-`u/DEL` - unmark file below/above
-`R` - resolve conflicts during merge
-`a` - add file to repository
-`r` - remove file
-`i` - add file to ignore list
-`c` - commit
-`U` - Undo -> revert file
-`l` - see log file
-`g` - refresh the status buffer
-`q` - quit status buffer
-`?` - get help!
+`select region then M-| pbcopy RET`<br/>
+`m` - mark the file the cursor is on ATM<br/>
+`M` - mark all files in buffer<br/>
+`u/DEL` - unmark file below/above<br/>
+`R` - resolve conflicts during merge<br/>
+`a` - add file to repository<br/>
+`r` - remove file<br/>
+`i` - add file to ignore list<br/>
+`c` - commit<br/>
+`U` - Undo -> revert file<br/>
+`l` - see log file<br/>
+`g` - refresh the status buffer<br/>
+`q` - quit status buffer<br/>
+`?` - get help!<br/>
 
 #### Midnight Commander
 Open directory in another panel `ESC+o`
