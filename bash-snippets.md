@@ -1,16 +1,16 @@
 # Files editing 
 `$ tail -f FILE` - Display file changes in real time
-`$ cat ORIGINFILE.TXT | tr -d '\n' | sed 's/"/\\"/g' > NEWFILE.TXT` - Remove new line and escape " symbols in the file
-`$ grep -ir SEARCHABLE_STRING PATH` - Find a string recursively at path
-`$ grep -A NUMBER_OF_LINES_AFTER -ir SEARCHABLE_STRING PATH`
+`$ cat ORIGINFILE.TXT | tr -d '\n' | sed 's/"/\\"/g' > NEWFILE.TXT` - Remove new line and escape " symbols in the file<br/>
+`$ grep -ir SEARCHABLE_STRING PATH` - Find a string recursively at path<br/>
+`$ grep -A NUMBER_OF_LINES_AFTER -ir SEARCHABLE_STRING PATH`<br/>
 
 # Zip
-`$ zip -er ZIP.zip file1 dir1 file2` - Zip files with password protecting
+`$ zip -er ZIP.zip file1 dir1 file2` - Zip files with password protecting<br/>
 
 # Emacs
 Copy from Emacs to OS X clipboard:
-`M-x hexl-find-file` - editing binary files (`delete-window`) 
-`M-x hexl-mode` - translate an existing buffer into hex      
+`M-x hexl-find-file` - editing binary files (`delete-window`)<br/>
+`M-x hexl-mode` - translate an existing buffer into hex<br/>
 
 # Git-Emacs
 `select region then M-| pbcopy RET`<br/>
