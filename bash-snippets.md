@@ -1,19 +1,18 @@
-# Files editing 
-`$ tail -f FILE` - Display file changes in real time
+### Files editing 
+`$ tail -f FILE` - Display file changes in real time<br/>
 `$ cat ORIGINFILE.TXT | tr -d '\n' | sed 's/"/\\"/g' > NEWFILE.TXT` - Remove new line and escape " symbols in the file<br/>
 `$ grep -ir SEARCHABLE_STRING PATH` - Find a string recursively at path<br/>
 `$ grep -A NUMBER_OF_LINES_AFTER -ir SEARCHABLE_STRING PATH`<br/>
 
-# Zip
+### Zip
 `$ zip -er ZIP.zip file1 dir1 file2` - Zip files with password protecting<br/>
 
-# Emacs
-Copy from Emacs to OS X clipboard:
+### Emacs
+`select region then M-| pbcopy RET` - copy from Emacs to OS X clipboard<br/>
 `M-x hexl-find-file` - editing binary files (`delete-window`)<br/>
 `M-x hexl-mode` - translate an existing buffer into hex<br/>
 
-# Git-Emacs
-`select region then M-| pbcopy RET`<br/>
+### Git-Emacs
 `m` - mark the file the cursor is on ATM<br/>
 `M` - mark all files in buffer<br/>
 `u/DEL` - unmark file below/above<br/>
@@ -28,10 +27,10 @@ Copy from Emacs to OS X clipboard:
 `q` - quit status buffer<br/>
 `?` - get help!<br/>
 
-# Emacs-Magit
+### Emacs-Magit
 `M-x magit-process-buffer` - to show the output of recently run git commands
 
-# Midnight Commander
+### Midnight Commander
 `ESC+o` - open directory in another panel 
 
 
