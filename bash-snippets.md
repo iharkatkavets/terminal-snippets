@@ -1,32 +1,18 @@
-Bash snippets
+# Files editing 
+`$ tail -f FILE` - Display file changes in real time
+`$ cat ORIGINFILE.TXT | tr -d '\n' | sed 's/"/\\"/g' > NEWFILE.TXT` - Remove new line and escape " symbols in the file
+`$ grep -ir SEARCHABLE_STRING PATH` - Find a string recursively at path
+`$ grep -A NUMBER_OF_LINES_AFTER -ir SEARCHABLE_STRING PATH`
 
+# Zip
+`$ zip -er ZIP.zip file1 dir1 file2` - Zip files with password protecting
 
-#### Files editing 
-Display file changes in real time
-```bash
-$ tail -f FILE
-```
-Remove new line and escape " symbols in the file
-```bash
-$ cat ORIGINFILE.TXT | tr -d '\n' | sed 's/"/\\"/g' > NEWFILE.TXT
-```
-
-Find a string recursively at path
-```bash
-$ grep -ir SEARCHABLE_STRING PATH
-$ grep -A NUMBER_OF_LINES_AFTER -ir SEARCHABLE_STRING PATH
-```
-
-#### Zip
-Zip files with password protecting
-```bash
-$ zip -er ZIP.zip file1 dir1 file2
-```
-
-#### Emacs
+# Emacs
 Copy from Emacs to OS X clipboard:
+`M-x hexl-find-file` - editing binary files (`delete-window`) 
+`M-x hexl-mode` - translate an existing buffer into hex      
 
-#### Git-Emacs
+# Git-Emacs
 `select region then M-| pbcopy RET`<br/>
 `m` - mark the file the cursor is on ATM<br/>
 `M` - mark all files in buffer<br/>
@@ -42,15 +28,11 @@ Copy from Emacs to OS X clipboard:
 `q` - quit status buffer<br/>
 `?` - get help!<br/>
 
-#### Emacs-Magit
+# Emacs-Magit
+`M-x magit-process-buffer` - to show the output of recently run git commands
 
-
-| Emacs                                                                | Emacs-Magit                                              | Vim  |
-| -------------------------------------------------------------------- |:--------------------------------------------------------:| -------------------------------------------------:|
-| `C-x 0` - delete the selected window (`delete-window`)               | `M-x magit-process-buffer` - to show the output of recently run git commands         | $1600 |
-
-#### Midnight Commander
-Open directory in another panel `ESC+o`
+# Midnight Commander
+`ESC+o` - open directory in another panel 
 
 
 
