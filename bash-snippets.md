@@ -4,6 +4,8 @@
 `$ grep -ir SEARCHABLE_STRING PATH` - Find a string recursively at path<br/>
 `$ grep -A NUMBER_OF_LINES_AFTER -ir SEARCHABLE_STRING PATH`<br/>
 
+`$ echo 'abc...1235abc..' | wc -c` - count characters in string
+
 ### Zip
 `$ zip -er ZIP.zip file1 dir1 file2` - Zip files with password protecting<br/>
 
