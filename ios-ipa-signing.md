@@ -31,3 +31,8 @@ Get SHA1 fingerprint from p12
 ```bash
 keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12
 ```
+
+Get SHA1 fingerprint from p12 (pretty print)
+```bash
+keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12 | grep SHA1 | tr -d :
+```
