@@ -26,3 +26,8 @@ Check a PKCS#12 file (.pfx or .p12)
 ```bash
 $ openssl pkcs12 -info -in CERTIFICATE.p12
 ```
+
+Get SHA1 fingerprint from p12
+```bash
+keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12
+```
