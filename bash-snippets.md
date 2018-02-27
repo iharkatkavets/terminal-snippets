@@ -9,6 +9,15 @@
 ### Zip
 `$ zip -er ZIP.zip file1 dir1 file2` - Zip files with password protecting<br/>
 
+zip files in directory with the same name as parent dir
+```bash
+$ zip -erv "$(basename `pwd`).zip" production.*
+$ Enter password:
+$ Verify password:
+$ rsync -v "$(basename `pwd`).zip" USER_NAME@SERVER:PATH && rm -rvf "$(basename `pwd`).zip"
+$ Password:
+```
+
 ### Emacs
 `select region then M-| pbcopy RET` - copy from Emacs to OS X clipboard<br/>
 `M-x hexl-find-file` - editing binary files (`delete-window`)<br/>
