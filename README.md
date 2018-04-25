@@ -47,6 +47,10 @@ Get SHA1 fingerprint from p12 (pretty print)
 keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12 | grep SHA1 | tr -d :
 ```
 
+Send a push notification to a specified device (requires `houston` gem)<br>
+`$ apn push -e production <DEVICE_TOKEN> -c <CERTIFICATE.PEM> -m <MESSAGE>`<br>
+`$ apn push <DEVICE_TOKEN> -c <CERTIFICATE.PEM> -m <MESSAGE>`<br>
+
 ## Bash
 ### Files editing 
 `$ tail -f FILE` - Display file changes in real time<br/>
