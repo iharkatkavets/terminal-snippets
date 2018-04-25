@@ -11,3 +11,9 @@ Download and find and count occurances of `regex_pattern` in response (by adding
 ```bash
 $ curl  -v --silent 'http://awesome.com' 2>&1 | sed $'s/regex_pattern/regex_pattern\\\n/g' | grep -c 'regex_pattern'
 ```
+
+### Git
+Clean up submodules
+```bash
+$ git submodule foreach --recursive git clean -x -f -d
+```
