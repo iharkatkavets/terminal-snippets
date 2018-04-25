@@ -1,16 +1,5 @@
 # Snippets
 
-* [Xcode Archive IPA signing](./ios-ipa-signing.md)<br>
-* [Bash Terminal](./bash-snippets.md)<br>
-* [Xcode debuger extension Chisel](./chisel-debug-snippets.md)<br>
-* [Xcode shortcuts](./xcode-shortcuts.md)<br>
-
-
-## CURL
-Download and find and count occurances of `regex_pattern` in response (by adding new line `\\\n`)
-```bash
-$ curl  -v --silent 'http://awesome.com' 2>&1 | sed $'s/regex_pattern/regex_pattern\\\n/g' | grep -c 'regex_pattern'
-```
 
 ### Git
 Clean up submodules
@@ -104,3 +93,29 @@ $ Password:
 
 ### Midnight Commander
 `ESC+o` - open directory in another panel 
+
+## Xcode debugger
+### Update view on debug
+```objective-c
+// stash a view (0x7f84c74ca870 address)
+(lldb) e UIView *$cell = (UIView *)[0x7f84c74ca870 superview]
+// set a new frame
+(lldb) e (void)[$cell setFrame:(CGRect){0.f, 324.f, 10.f, 54.f}]
+// set a new frame
+(lldb) e (void)[$cell setFrame:(CGRect){0.f, 324.f, 10.f, 54.f}]
+// update
+(lldb) caflush frame
+```
+
+### Examining Variables
+Show the contents of the local variable bar formatted as hex.
+```
+(lldb) frame variable --format x bar
+(lldb) fr v -f x bar
+```
+
+### CURL
+Download and find and count occurances of `regex_pattern` in response (by adding new line `\\\n`)
+```bash
+$ curl  -v --silent 'http://awesome.com' 2>&1 | sed $'s/regex_pattern/regex_pattern\\\n/g' | grep -c 'regex_pattern'
+```
