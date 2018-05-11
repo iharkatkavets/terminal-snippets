@@ -71,6 +71,11 @@ $ Verify password:
 $ rsync -v "$(basename `pwd`).zip" USER_NAME@SERVER:PATH && rm -rvf "$(basename `pwd`).zip"
 $ Password:
 ```
+### Find
+Find files matched pattern `*.ipa` and extract to directory named `filename.unz`<br>
+```bash
+$ find . -name '*.ipa' -exec sh -c 'unzip -d `basename {}`.unz {}' \;
+```
 
 ### Emacs
 `select region then M-| pbcopy RET` - copy from Emacs to OS X clipboard<br/>
