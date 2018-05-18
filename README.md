@@ -60,7 +60,7 @@ $ Password:
 *Find files matched pattern `*.ipa` and extract to directory named `filename.unz`* <br>
 ```$ find . -name '*.ipa' -exec sh -c 'unzip -d `basename {}`.unz {}' \; ``` <br>
 *Find files with matched patterh `*.txt` and copy to CGL-28825 directory* <br>
-```find ./UnitTests/ -name '*.txt' -exec sh -c 'cp {} CGL-28825/{}' \; ```
+```$ find ./UnitTests/ -name '*.txt' -exec sh -c 'cp {} CGL-28825/{}' \; ```
 
 ### $ sed
 *Find all \*.txt files in dir and execute sed without backuping* <br>
