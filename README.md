@@ -63,8 +63,8 @@ $ find . -name '*.ipa' -exec sh -c 'unzip -d `basename {}`.unz {}' \;
 ```
 
 ### $ sed
-Find all *.txt files in dir and execute sed without backuping <br>
-> `$ find ./UnitTests/ -type f -name '*.txt' -exec sed -i '' -e 's/video_url_android/dash/g' {} +`
+*Find all \*.txt files in dir and execute sed without backuping* <br>
+`$ find ./UnitTests/ -type f -name '*.txt' -exec sed -i '' -e 's/video_url_android/dash/g' {} +`
 
 ### Emacs
 `select region then M-| pbcopy RET` - copy from Emacs to OS X clipboard<br/>
