@@ -45,7 +45,7 @@ Send a push notification to a specified device (requires `houston` gem) <br>
 
 `$ echo 'abc...1235abc..' | wc -c` - count characters in string
 
-### Zip
+### $ zip
 `$ zip -er ZIP.zip file1 dir1 file2` - Zip files with password protecting <br/>
 
 zip files in directory with the same name as parent dir
@@ -56,11 +56,15 @@ $ Verify password:
 $ rsync -v "$(basename `pwd`).zip" USER_NAME@SERVER:PATH && rm -rvf "$(basename `pwd`).zip"
 $ Password:
 ```
-### Find
+### $ find
 Find files matched pattern `*.ipa` and extract to directory named `filename.unz` <br>
 ```bash
 $ find . -name '*.ipa' -exec sh -c 'unzip -d `basename {}`.unz {}' \;
 ```
+
+### $ sed
+Find all *.txt files in dir and execute sed without backuping <br>
+`find ./UnitTests/ -type f -name '*.txt' -exec sed -i '' -e 's/video_url_android/dash/g' {} +`
 
 ### Emacs
 `select region then M-| pbcopy RET` - copy from Emacs to OS X clipboard<br/>
