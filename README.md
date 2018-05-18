@@ -8,48 +8,33 @@ $ git submodule foreach --recursive git clean -x -f -d
 ```
 
 ### App signing management
-Get a glance at the identities ("SHA1" "Name")
-```bash
-$ security find-identity -v -p codesigning
-```
-Get information about the code signing status
-```bash
-$ codesign -vv -d Payload/Example.app
-```
+Get a glance at the identities ("SHA1" "Name") <br>
+`$ security find-identity -v -p codesigning` <br>
 
-Entitlements embedded in binary
-```bash
-$ codesign -d --entitlements - Payload/Example.app/
-```
+Get information about the code signing status <br>
+`$ codesign -vv -d Payload/Example.app` <br>
 
-Verify provision profile
-```bash
-$ openssl smime -in PROFILE.mobileprovision -inform der -verify
-```
+Entitlements embedded in binary <br>
+`$ codesign -d --entitlements - Payload/Example.app/` <br>
 
-Find a certificate item and print  SHA-1 hash of the certificate
-```bash
-$ security find-certificate -a -c 'NAME_OF_THE_CERTIFICATE' -Z login.keychain
-```
+Verify provision profile <br>
+`$ openssl smime -in PROFILE.mobileprovision -inform der -verify` <br>
 
-Check a PKCS#12 file (.pfx or .p12)
-```bash
-$ openssl pkcs12 -info -in CERTIFICATE.p12
-```
+Find a certificate item and print  SHA-1 hash of the certificate <br>
+`$ security find-certificate -a -c 'NAME_OF_THE_CERTIFICATE' -Z login.keychain` <br>
 
-Get SHA1 fingerprint from p12
-```bash
-keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12
-```
+Check a PKCS#12 file (.pfx or .p12) <br>
+`$ openssl pkcs12 -info -in CERTIFICATE.p12` <br>
 
-Get SHA1 fingerprint from p12 (pretty print)
-```bash
-keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12 | grep SHA1 | tr -d :
-```
+Get SHA1 fingerprint from p12 <br>
+`keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12` <br>
 
-Send a push notification to a specified device (requires `houston` gem)<br>
-`$ apn push -e production <DEVICE_TOKEN> -c <CERTIFICATE.PEM> -m <MESSAGE>`<br>
-`$ apn push <DEVICE_TOKEN> -c <CERTIFICATE.PEM> -m <MESSAGE>`<br>
+Get SHA1 fingerprint from p12 (pretty print) <br>
+'keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12 | grep SHA1 | tr -d :` <br>
+
+Send a push notification to a specified device (requires `houston` gem) <br>
+`$ apn push -e production <DEVICE_TOKEN> -c <CERTIFICATE.PEM> -m <MESSAGE>` <br>
+`$ apn push <DEVICE_TOKEN> -c <CERTIFICATE.PEM> -m <MESSAGE>` <br>
 
 ## Bash
 ### Files editing 
@@ -61,7 +46,7 @@ Send a push notification to a specified device (requires `houston` gem)<br>
 `$ echo 'abc...1235abc..' | wc -c` - count characters in string
 
 ### Zip
-`$ zip -er ZIP.zip file1 dir1 file2` - Zip files with password protecting<br/>
+`$ zip -er ZIP.zip file1 dir1 file2` - Zip files with password protecting <br/>
 
 zip files in directory with the same name as parent dir
 ```bash
@@ -72,7 +57,7 @@ $ rsync -v "$(basename `pwd`).zip" USER_NAME@SERVER:PATH && rm -rvf "$(basename 
 $ Password:
 ```
 ### Find
-Find files matched pattern `*.ipa` and extract to directory named `filename.unz`<br>
+Find files matched pattern `*.ipa` and extract to directory named `filename.unz` <br>
 ```bash
 $ find . -name '*.ipa' -exec sh -c 'unzip -d `basename {}`.unz {}' \;
 ```
