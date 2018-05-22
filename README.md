@@ -38,16 +38,16 @@ Send a push notification to a specified device (requires `houston` gem) <br>
 
 ## Bash
 ### Files editing 
-*Display file changes in real time* <br/>
+Display file changes in real time <br/>
 ```$ tail -f FILE``` <br/>
-*Remove new line and escape " symbols in the file* <br/>
+Remove new line and escape " symbols in the file <br/>
 ```$ cat ORIGINFILE.TXT | tr -d '\n' | sed 's/"/\\"/g' > NEWFILE.TXT``` <br/>
-*Find a string recursively at path* <br/>
+Find a string recursively at path <br/>
 ```$ grep -ir SEARCHABLE_STRING PATH``` <br/>
 ```$ grep -A NUMBER_OF_LINES_AFTER -ir SEARCHABLE_STRING PATH```<br/>
-*Create a file from hex string* <br/>
+Create a file from hex string <br/>
 ```$ writehex 8ade18f6 00000001 00000000 51aabd81 > FILENAME.EXT``` <br/>
-*Сount characters in string* <br/>
+Сount characters in string <br/>
 ```$ echo 'abc...1235abc..' | wc -c``` <br/>
 
 ### $ zip
