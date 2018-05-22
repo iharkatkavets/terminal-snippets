@@ -38,12 +38,17 @@ Send a push notification to a specified device (requires `houston` gem) <br>
 
 ## Bash
 ### Files editing 
-`$ tail -f FILE` - Display file changes in real time<br/>
-`$ cat ORIGINFILE.TXT | tr -d '\n' | sed 's/"/\\"/g' > NEWFILE.TXT` - Remove new line and escape " symbols in the file<br/>
-`$ grep -ir SEARCHABLE_STRING PATH` - Find a string recursively at path<br/>
-`$ grep -A NUMBER_OF_LINES_AFTER -ir SEARCHABLE_STRING PATH`<br/>
-
-`$ echo 'abc...1235abc..' | wc -c` - count characters in string
+*Display file changes in real time* <br/>
+```$ tail -f FILE``` <br/>
+*Remove new line and escape " symbols in the file* <br/>
+```$ cat ORIGINFILE.TXT | tr -d '\n' | sed 's/"/\\"/g' > NEWFILE.TXT``` <br/>
+*Find a string recursively at path* <br/>
+```$ grep -ir SEARCHABLE_STRING PATH``` <br/>
+```$ grep -A NUMBER_OF_LINES_AFTER -ir SEARCHABLE_STRING PATH```<br/>
+*Create a file from hex string* <br/>
+```$ writehex 8ade18f6 00000001 00000000 51aabd81 > FILENAME.EXT``` <br/>
+*Сount characters in string* <br/>
+```$ echo 'abc...1235abc..' | wc -c``` <br/>
 
 ### $ zip
 `$ zip -er ZIP.zip file1 dir1 file2` - Zip files with password protecting <br/>
