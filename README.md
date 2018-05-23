@@ -62,14 +62,14 @@ $ rsync -v "$(basename `pwd`).zip" USER_NAME@SERVER:PATH && rm -rvf "$(basename 
 $ Password:
 ```
 ### $ find
-*Find files matched pattern `*.ipa` and extract to directory named `filename.unz`* <br>
+Find files matched pattern `*.ipa` and extract to directory named `filename.unz` <br>
 ```$ find . -name '*.ipa' -exec sh -c 'unzip -d `basename {}`.unz {}' \; ``` <br>
-*Find files with matched patterh `*.txt` and copy to CGL-28825 directory* <br>
+Find files with matched patterh `*.txt` and copy to CGL-28825 directory <br>
 ```$ find ./UnitTests/ -name '*.txt' -exec sh -c 'cp {} CGL-28825/{}' \; ```
 
 ### $ sed
-*Find all \*.txt files in dir and execute sed without backuping* <br>
-`$ find ./UnitTests/ -type f -name '*.txt' -exec sed -i '' -e 's/video_url_android/dash/g' {} +`
+Find all \*.txt files in dir and execute sed without backuping <br>
+```$ find ./UnitTests/ -type f -name '*.txt' -exec sed -i '' -e 's/video_url_android/dash/g' {} +```
 
 ### Emacs
 `select region then M-| pbcopy RET` - copy from Emacs to OS X clipboard<br/>
