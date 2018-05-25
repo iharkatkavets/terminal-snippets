@@ -71,6 +71,14 @@ Find files with matched patterh `*.txt` and copy to CGL-28825 directory <br>
 Find all \*.txt files in dir and execute sed without backuping <br>
 ```$ find ./UnitTests/ -type f -name '*.txt' -exec sed -i '' -e 's/video_url_android/dash/g' {} +```
 
+### $ curl
+Download and find and count occurances of `regex_pattern` in response (by adding new line `\\\n`)
+```bash
+$ curl  -v --silent 'http://awesome.com' 2>&1 | sed $'s/regex_pattern/regex_pattern\\\n/g' | grep -c 'regex_pattern'
+```
+An example with query parameters
+```curl -X POST -H "Accept: application/json" -H "Authorization: Basic xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" -H "Content-Type: application/x-www-form-urlencoded" --data 'grant_type=clone&refresh_token=xxx-xxx&scope=client'  'https://google.com'```
+
 ### Emacs
 `select region then M-| pbcopy RET` - copy from Emacs to OS X clipboard<br/>
 `M-x hexl-find-file` - editing binary files (`delete-window`)<br/>
@@ -115,10 +123,4 @@ Show the contents of the local variable bar formatted as hex.
 ```
 (lldb) frame variable --format x bar
 (lldb) fr v -f x bar
-```
-
-### CURL
-Download and find and count occurances of `regex_pattern` in response (by adding new line `\\\n`)
-```bash
-$ curl  -v --silent 'http://awesome.com' 2>&1 | sed $'s/regex_pattern/regex_pattern\\\n/g' | grep -c 'regex_pattern'
 ```
