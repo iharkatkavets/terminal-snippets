@@ -76,7 +76,7 @@ Download and find and count occurances of `regex_pattern` in response (by adding
 ```bash
 $ curl  -v --silent 'http://awesome.com' 2>&1 | sed $'s/regex_pattern/regex_pattern\\\n/g' | grep -c 'regex_pattern'
 ```
-An example with query parameters
+An example with query parameters <br/>
 ```curl -X POST -H "Accept: application/json" -H "Authorization: Basic xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" -H "Content-Type: application/x-www-form-urlencoded" --data 'grant_type=clone&refresh_token=xxx-xxx&scope=client'  'https://google.com'```
 
 ### Emacs
