@@ -81,6 +81,12 @@ An example with query parameters <br/>
 curl -X POST -H "Accept: application/json" -H "Authorization: Basic xxxxxxxx" -H "Content-Type: application/x-www-form-urlencoded" --data 'grant_type=clone&refresh_token=xxx-xxx&scope=client'  'https://SERVER_URL'
 ```
 
+### Formatting
+Pretty print JSON string
+```bash
+$ echo '{"foo": "lorem", "bar": "ipsum"}' | python -m json.tool
+```
+
 ### Emacs
 `select region then M-| pbcopy RET` - copy from Emacs to OS X clipboard<br/>
 `M-x hexl-find-file` - editing binary files (`delete-window`)<br/>
