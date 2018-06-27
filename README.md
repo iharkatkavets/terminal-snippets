@@ -62,12 +62,14 @@ $ rsync -v "$(basename `pwd`).zip" USER_NAME@SERVER:PATH && rm -rvf "$(basename 
 $ Password:
 ```
 ### $ find
-Find files matched pattern `*.ipa` and extract to directory named `filename.unz` <br>
-```$ find . -name '*.ipa' -exec sh -c 'unzip -d `basename {}`.unz {}' \; ``` <br>
-Find files with matched patterh `*.txt` and copy to CGL-28825 directory <br>
-```$ find ./UnitTests/ -name '*.txt' -exec sh -c 'cp {} CGL-28825/{}' \; ``` <br>
+Find files matched pattern `*.ipa` and extract to directory named `filename.unz` <br/>
+```$ find . -name '*.ipa' -exec sh -c 'unzip -d `basename {}`.unz {}' \; ``` <br/>
+Find files with matched patterh `*.txt` and copy to CGL-28825 directory <br/>
+```$ find ./UnitTests/ -name '*.txt' -exec sh -c 'cp {} CGL-28825/{}' \; ``` <br/>
 Find duplicated files in the directory <br>
-```$ find . ! -empty -type f -exec md5 {} + | sort | uniq -d```
+```$ find . ! -empty -type f -exec md5 {} + | sort | uniq -d``` <br/>
+Find in current folder the folders that were modified 182 days ago and delete them <br/>
+```$ find ./ -maxdepth 1 -type d -ctime +182 -exec rm -rfv {} \;``` <br/>
 
 ### $ sed
 Find all \*.txt files in dir and execute sed without backuping <br>
