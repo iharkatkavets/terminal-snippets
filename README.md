@@ -73,7 +73,13 @@ Find in current folder the folders that were modified 182 days ago and delete th
 
 ### $ sed
 Find all \*.txt files in dir and execute sed without backuping <br>
-```$ find ./UnitTests/ -type f -name '*.txt' -exec sed -i '' -e 's/video_url_android/dash/g' {} +```
+```bash
+$ find ./UnitTests/ -type f -name '*.txt' -exec sed -i '' -e 's/video_url_android/dash/g' {} +
+```
+Extract substring `"Bench press"` from a string `"title": "Bench press"` 
+```bash
+$ echo '"title": "Bench press"' | sed -ne 's/"title": \([a-z]+\)*//p'
+```
 
 ### $ curl
 Download and find and count occurances of `regex_pattern` in response (by adding new line `\\\n`)
