@@ -80,6 +80,11 @@ Extract substring `"Bench press"` from a string `"title": "Bench press"`
 ```bash
 $ echo '"title": "Bench press"' | sed -ne 's/"title": \([a-z]+\)*//p'
 ```
+|   |   |   |
+|---|---|---|
+|`[[:space:]]*`|match the whitespace characters `<tab>` and `<space>`|   |
+|   |   |   |
+|   |   |   |
 
 ### $ curl
 Download and find and count occurances of `regex_pattern` in response (by adding new line `\\\n`)
