@@ -101,6 +101,11 @@ Pretty print JSON string
 ```bash
 $ echo '{"foo": "lorem", "bar": "ipsum"}' | python -m json.tool
 ```
+Pretty print XML string
+```bash
+$ echo '<root><foo a="b">lorem</foo><bar value="ipsum" /></root>' | xmllint --format -
+```
+
 
 ### Emacs
 `select region then M-| pbcopy RET` - copy from Emacs to OS X clipboard<br/>
