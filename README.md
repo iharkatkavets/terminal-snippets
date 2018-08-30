@@ -30,7 +30,7 @@ Get SHA1 fingerprint from p12 <br>
 `keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12` <br>
 
 Get SHA1 fingerprint from p12 (pretty print) <br>
-'keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12 | grep SHA1 | tr -d :` <br>
+`keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12 | grep SHA1 | tr -d :` <br>
 
 Send a push notification to a specified device (requires `houston` gem) <br>
 `$ apn push -e production <DEVICE_TOKEN> -c <CERTIFICATE.PEM> -m <MESSAGE>` <br>
