@@ -36,6 +36,10 @@ Send a push notification to a specified device (requires `houston` gem) <br>
 `$ apn push -e production <DEVICE_TOKEN> -c <CERTIFICATE.PEM> -m <MESSAGE>` <br>
 `$ apn push <DEVICE_TOKEN> -c <CERTIFICATE.PEM> -m <MESSAGE>` <br>
 
+### Resign the app
+
+`zip -r MyApp.ipa Payload -x "*.DS_Store"`
+
 ## Bash
 ### Files editing 
 Display file changes in real time <br/>
