@@ -100,6 +100,12 @@ An example with query parameters <br/>
 curl -X POST -H "Accept: application/json" -H "Authorization: Basic xxxxxxxx" -H "Content-Type: application/x-www-form-urlencoded" --data 'grant_type=clone&refresh_token=xxx-xxx&scope=client'  'https://SERVER_URL'
 ```
 
+### $ grep
+Extract substring from string:
+```
+$ grep -o -E '^[H](H|T|t)+-[0-9]{4}'
+```
+
 ### Formatting
 Pretty print JSON string
 ```bash
