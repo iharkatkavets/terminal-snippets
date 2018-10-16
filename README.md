@@ -4,7 +4,7 @@
 ### Git
 Clean up submodules
 ```bash
-$ git submodule foreach --recursive git clean -x -f -d
+$ git submodule foreach --recursive git clean -xfd
 ```
 
 ### App signing management
