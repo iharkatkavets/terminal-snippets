@@ -74,6 +74,10 @@ Find duplicated files in the directory <br>
 ```$ find . ! -empty -type f -exec md5 {} + | sort | uniq -d``` <br/>
 Find in current folder the folders that were modified 182 days ago and delete them <br/>
 ```$ find ./ -maxdepth 1 -type d -ctime +182 -exec rm -rfv {} \;``` <br/>
+Find in current folder PNG images and remove alpha channel. Adds white color to background. Overwrites!<br/>
+```bash
+$ find . -name '*.png' -exec sh -c 'convert {} -background white -alpha remove -alpha off {}' \;
+```
 
 ### $ sed
 Find all \*.txt files in dir and execute sed without backuping <br>
