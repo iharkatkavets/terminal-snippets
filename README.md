@@ -37,8 +37,22 @@ Send a push notification to a specified device (requires `houston` gem) <br>
 `$ apn push <DEVICE_TOKEN> -c <CERTIFICATE.PEM> -m <MESSAGE>` <br>
 
 ### Resign the app
-
-`zip -r MyApp.ipa Payload -x "*.DS_Store"`
+Unzip the ipa file
+```bash
+$ unzip MyApp.ipa
+```
+Extract entitlements to entitlements.xml file
+```bash
+$ codesign -d --entitlements entitlements.xml Payload/MyApp.app/MyApp
+```
+Replace empbedded mobileprovision file and resign the app 
+```bash
+$ codesign --entitlements entitlements.xml -f -s  "iPhone Distribution: COMPANY" Payload/MyApp.app
+```
+Create ipa file (excluding .DS_Store files from zip archive)
+```bash
+$ zip -r MyApp.ipa Payload -x "*.DS_Store"
+```
 
 ## Bash
 ### Files editing 
