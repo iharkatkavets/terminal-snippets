@@ -27,32 +27,24 @@ Check a PKCS#12 file (.pfx or .p12) <br>
 `$ openssl pkcs12 -info -in CERTIFICATE.p12` <br>
 
 Get SHA1 fingerprint from p12 <br>
-`keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12` <br>
+`$ keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12` <br>
 
 Get SHA1 fingerprint from p12 (pretty print) <br>
-`keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12 | grep SHA1 | tr -d :` <br>
+`$ keytool -list -v  -storetype PKCS12 -storepass 'CERTPASSWORD' -keystore CERT.p12 | grep SHA1 | tr -d :` <br>
 
 Send a push notification to a specified device (requires `houston` gem) <br>
 `$ apn push -e production <DEVICE_TOKEN> -c <CERTIFICATE.PEM> -m <MESSAGE>` <br>
 `$ apn push <DEVICE_TOKEN> -c <CERTIFICATE.PEM> -m <MESSAGE>` <br>
 
 ### Resign the app
-Unzip the ipa file
-```bash
-$ unzip MyApp.ipa
-```
-Extract entitlements to entitlements.xml file
-```bash
-$ codesign -d --entitlements entitlements.xml Payload/MyApp.app
-```
-Replace empbedded mobileprovision file and resign the app 
-```bash
-$ codesign --entitlements entitlements.xml -f -s  "iPhone Distribution: COMPANY" Payload/MyApp.app
-```
-Create ipa file (excluding .DS_Store files from zip archive)
-```bash
-$ zip -r MyApp.ipa Payload -x "*.DS_Store"
-```
+Unzip the ipa file <br>
+`$ unzip MyApp.ipa` <br>
+Extract entitlements to entitlements.xml file <br>
+`$ codesign -d --entitlements entitlements.xml Payload/MyApp.app` <br>
+Replace empbedded mobileprovision file and resign the app  <br>
+`$ codesign --entitlements entitlements.xml -f -s  "iPhone Distribution: COMPANY" Payload/MyApp.app` <br>
+Create ipa file (excluding .DS_Store files from zip archive) <br>
+`$ zip -r MyApp.ipa Payload -x "*.DS_Store"` <br>
 
 ## Bash
 ### Files editing 
