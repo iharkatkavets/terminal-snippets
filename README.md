@@ -1,4 +1,4 @@
-# Snippets
+# Terminal Snippets
 
 
 ### Git
