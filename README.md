@@ -43,7 +43,7 @@ $ unzip MyApp.ipa
 ```
 Extract entitlements to entitlements.xml file
 ```bash
-$ codesign -d --entitlements entitlements.xml Payload/MyApp.app/MyApp
+$ codesign -d --entitlements entitlements.xml Payload/MyApp.app
 ```
 Replace empbedded mobileprovision file and resign the app 
 ```bash
