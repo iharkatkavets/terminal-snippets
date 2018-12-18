@@ -2,11 +2,9 @@
 
 
 ### Git
-Clean up submodules
-```bash
-$ git submodule foreach --recursive git clean -xfd
-$ git submodule update -f --init --recursive --remote
-```
+Clean up submodules <br>
+`$ git submodule foreach --recursive git clean -xfd` <br>
+`$ git submodule update -f --init --recursive --remote`
 
 ### App signing management
 Get a glance at the identities ("SHA1" "Name") <br>
