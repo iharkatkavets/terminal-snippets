@@ -5,6 +5,7 @@
 Clean up submodules
 ```bash
 $ git submodule foreach --recursive git clean -xfd
+$ git submodule update -f --init --recursive --remote
 ```
 
 ### App signing management
