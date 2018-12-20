@@ -176,3 +176,7 @@ Show the contents of the local variable bar formatted as hex.
 (lldb) frame variable --format x bar
 (lldb) fr v -f x bar
 ```
+
+### Android. 
+Grep logs from the Android device
+`$ ~/Library/Android/sdk/platform-tools/adb logcat | grep BUNDLE_ID`
