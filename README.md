@@ -157,6 +157,12 @@ $ echo '<root><foo a="b">lorem</foo><bar value="ipsum" /></root>' | xmllint --fo
 ### Midnight Commander
 `ESC+o` - open directory in another panel 
 
+### Xcode. Setup template commands
+Rename class prefix occurances in the folder.
+``` bash
+$ find ./ -type f -exec sed -i "" -e 's/CLConfirmLogout/___VARIABLE_productName:identifier___/g' {} \;
+```
+
 ## Xcode debugger
 ### Update view on debug
 ```objective-c
