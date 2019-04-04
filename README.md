@@ -118,6 +118,15 @@ Extract substring from string:
 ```
 $ grep -o -E '^[H](H|T|t)+-[0-9]{4}'
 ```
+Extract `123` from `versionCode 123`
+```
+$ cat build.gradle | grep 'versionCode ' | grep -o -E '[0-9]+'
+```
+Extract `"1.2.3"` from `versionName "1.2.3"`
+```
+$ cat build.gradle | grep 'versionName ' | grep -o -E '\"[0-9].[0-9].[0-9]\"'
+```
+
 
 ### Formatting
 Pretty print JSON string
