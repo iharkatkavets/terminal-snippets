@@ -115,15 +115,15 @@ curl -X POST -H "Accept: application/json" -H "Authorization: Basic xxxxxxxx" -H
 
 ### $ grep
 Extract substring from string:
-```
+```bash
 $ grep -o -E '^[H](H|T|t)+-[0-9]{4}'
 ```
 Extract `123` from `versionCode 123`
-```
+```bash
 $ cat build.gradle | grep 'versionCode ' | grep -o -E '[0-9]+'
 ```
 Extract `"1.2.3"` from `versionName "1.2.3"`
-```
+```bash
 $ cat build.gradle | grep 'versionName ' | grep -o -E '\"[0-9].[0-9].[0-9]\"'
 ```
 
