@@ -83,6 +83,10 @@ Find in current folder PNG images and remove alpha channel. Adds white color to 
 ```bash
 $ find . -name '*.png' -exec sh -c 'convert {} -background white -alpha remove -alpha off {}' \;
 ```
+Find all Info.plist files and add new boolean false value
+```bash
+$ find ./ -name Info.plist -exec sh -c '/usr/libexec/PlistBuddy -c "Add :test bool false" {}'  \; 
+```
 
 ### $ sed
 Find all \*.txt files in dir and execute sed without backuping <br>
