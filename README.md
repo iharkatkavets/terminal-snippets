@@ -134,7 +134,7 @@ $ cat build.gradle | grep 'versionName ' | grep -o -E '\"[0-9].[0-9].[0-9]\"'
 ### $ rsync
 Sync images(png, PNG, jpg, JPG)  in 2 local folders
 ```bash
-$ rsync --include="*.[Jj][Pp][Gg]" --include="*.[Pp][Nn][Gg]" -av --progress FromDir1/ ToDir2/
+$  rsync -r --include="*.[Jj][Pp][Gg]" --include="*.[Pp][Nn][Gg]" --include="*/" --exclude="*" -av --progress FromDir1/ ToDir2/
 ```
 
 
