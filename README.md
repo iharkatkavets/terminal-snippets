@@ -205,3 +205,7 @@ Show the contents of the local variable bar formatted as hex.
 ### Android. 
 Grep logs from the Android device
 `$ ~/Library/Android/sdk/platform-tools/adb logcat | grep BUNDLE_ID`
+
+### FFMPEG
+Cut video of [duration]
+`ffmpeg -ss [start] -i in.mp4 -t [duration] -c copy out.mp4`
