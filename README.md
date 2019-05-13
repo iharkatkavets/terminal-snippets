@@ -208,4 +208,6 @@ Grep logs from the Android device
 
 ### FFMPEG
 Cut video of [duration]
-`ffmpeg -ss [start] -i in.mp4 -t [duration] -c copy out.mp4`
+`$ ffmpeg -ss [start] -i in.mp4 -t [duration] -c copy out.mp4`
+Create gif image from movie
+`$ ffmpeg -i out.mp4 -pix_fmt rgb24 output.gif`
