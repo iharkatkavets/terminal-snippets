@@ -5,6 +5,14 @@
 Clean up submodules <br>
 `$ git submodule foreach --recursive git clean -xfd` <br>
 `$ git submodule update -f --init --recursive --remote`
+Cherry pick diffs which are contained only in the `BRANCH`
+```bash
+$ git cherry -v dev3 CGL-1117 > only-feature-chages.txt
+$ git cherry-pick 64f0e89e718aa034704c5895f9de858afae9da97 f415a7d8c1599021761bab852109ef6389918...
+$ git status
+$ git cherry-pick --continue
+
+```
 
 ### App signing management
 Get a glance at the identities ("SHA1" "Name") <br>
