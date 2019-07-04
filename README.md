@@ -3,8 +3,10 @@
 
 ### Git
 Clean up submodules <br>
-`$ git submodule foreach --recursive git clean -xfd` <br>
-`$ git submodule update -f --init --recursive --remote` <br>
+```bash 
+$ git submodule foreach --recursive git clean -xfd
+$ git submodule update -f --init --recursive --remote
+```
 Cherry pick diffs which are contained only in the `BRANCH`
 ```bash
 $ git cherry -v dev3 CGL-1117 > only-feature-chages.txt
