@@ -13,8 +13,12 @@ $ git cherry -v master ANY_BRANCH > only-feature-chages.txt
 $ git cherry-pick 64f0e89e718aa034704c5895f9de858afae9da97 f415a7d8c1599021761bab852109ef6389918...
 $ git status
 $ git cherry-pick --continue
-
 ```
+Git find "string" in the history of diffs
+```bash
+$ git log -S string_for_searching
+```
+
 
 ### App signing management
 Get a glance at the identities ("SHA1" "Name") <br>
