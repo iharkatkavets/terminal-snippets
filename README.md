@@ -101,6 +101,10 @@ Find all Info.plist files and add new boolean false value
 ```bash
 $ find ./ -name Info.plist -exec sh -c '/usr/libexec/PlistBuddy -c "Add :test bool false" {}'  \; 
 ```
+Find example
+```
+$ find ./ -type f -name '*.xib' -exec sed -i '' -e 's/<device[a-z=\"0-9_ ]*\/>/<device id=\"appleTV\" appearance=\"light\"\/>/g' {} +
+```
 
 ### $ sed
 Find all \*.txt files in dir and execute sed without backuping <br>
