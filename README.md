@@ -1,8 +1,8 @@
 # 💻 Terminal Snippets
 
-# Ediff shortcuts
+### Ediff shortcuts
 <details>
-  <summary>Ediff shortcuts</summary>
+  <summary>Ediff shortcuts expand</summary>
 
   `a` - apply changes from buffer A<br>
   `b` - apply changes from buffer B<br>
