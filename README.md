@@ -1,5 +1,6 @@
 # 💻 Terminal Snippets
 
+* [Ediff shortcuts](https://github.com/igorkotkovets/terminal-snippets/blob/master/ediff.md)
 
 ### Git
 Clean up submodules <br>
