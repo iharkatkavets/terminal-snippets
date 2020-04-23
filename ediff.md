@@ -9,5 +9,5 @@
 `C-x o` - change focused buffer window<br>
 `v` - scroll bottom<br>
 `M-v` - scroll up
-
+`q` - end ediffing
 
