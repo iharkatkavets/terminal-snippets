@@ -8,6 +8,6 @@
 `r` - recover the original difference region in buffer C<br>
 `C-x o` - change focused buffer window<br>
 `v` - scroll bottom<br>
-`M-v` - scroll up
-`q` - end ediffing
+`M-v` - scroll up<br>
+`q` - end ediffing<br>
 
