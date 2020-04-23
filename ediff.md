@@ -7,7 +7,7 @@
 `p` - show previous changes<br>
 `r` - recover the original difference region in buffer C<br>
 `C-x o` - change focused buffer window<br>
-`v` - scroll bottom
+`v` - scroll bottom<br>
 `M-v` - scroll up
 
 
