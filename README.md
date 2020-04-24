@@ -16,11 +16,13 @@
   `q` - end ediffing<br>
 </details>
 
-### base64 snippets
+### $ base64
 <details>
   <summary>expand</summary>
   
-    $ base64 -i CertificateSigningRequest.certSigningRequest -o encodedbase64.txt
+    $ base64 -i IN_FILE_PATH -o OUT_FILE_PATH
+   Examples<br>
+   ```$ base64 -i CertificateSigningRequest.certSigningRequest -o encodedbase64.txt```
 </details>
 
 ### Git
