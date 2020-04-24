@@ -24,8 +24,21 @@
   
     $ base64 -i IN_FILE_PATH -o OUT_FILE_PATH
    Examples<br>
-   ```$ base64 -i CertificateSigningRequest.certSigningRequest -o encodedbase64.txt```
+     
+    $ base64 -i CertificateSigningRequest.certSigningRequest -o encodedbase64.txt
+
+   Encode string<br>
+     
+     $ base64 -D <<< STRING<br>
+   
+    `base64 <<< LS0tLS1CRUdJTiBDRVJUSUZJ<br>`
+    
+    `$ base64 -D <<< STRING<br>`
+    Decode string<br>
+   `base64 -D <<< LS0tLS1CRUdJTiBDRVJUSUZJ== > file.bin`
 </details>
+
+---
 
 ### Git
 Clean up submodules <br>
