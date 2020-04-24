@@ -16,6 +16,13 @@
   `q` - end ediffing<br>
 </details>
 
+### base64 snippets
+<details>
+  <summary>expand</summary>
+  
+    $ base64 -i CertificateSigningRequest.certSigningRequest -o encodedbase64.txt
+</details>
+
 ### Git
 Clean up submodules <br>
 ```bash 
