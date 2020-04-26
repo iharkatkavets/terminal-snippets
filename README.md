@@ -29,11 +29,11 @@
 
    Encode string<br>
      
-     $ base64 -D <<< STRING<br>
+     $ base64 -D <<< STRING
    
-    `base64 <<< LS0tLS1CRUdJTiBDRVJUSUZJ<br>`
+    `base64 <<< LS0tLS1CRUdJTiBDRVJUSUZJ`
     
-    `$ base64 -D <<< STRING<br>`
+    `$ base64 -D <<< STRING`
     Decode string<br>
    `base64 -D <<< LS0tLS1CRUdJTiBDRVJUSUZJ== > file.bin`
 </details>
