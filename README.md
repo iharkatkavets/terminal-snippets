@@ -227,9 +227,14 @@ $ echo '<root><foo a="b">lorem</foo><bar value="ipsum" /></root>' | xmllint --fo
 `?` - get help!<br/>
 
 ### Emacs-Magit
-`M-x magit-process-buffer` - to show the output of recently run git commands
-`M-x magit-section-cycle-diffs` - to expand all diffs
-`l-l b-b` - checkout selected commit in history
+
+<details>
+  <summary>Emacs-Magit</summary>
+
+  `M-x magit-process-buffer` - to show the output of recently run git commands<br>
+  `M-x magit-section-cycle-diffs` - to expand all diffs<br>
+  `l-l b-b` - checkout selected commit in history<br>
+</details>
 
 ### Midnight Commander
 `ESC+o` - open directory in another panel 
