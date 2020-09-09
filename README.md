@@ -57,7 +57,10 @@ Git find "string" in the history of diffs
 ```bash
 $ git log -S string_for_searching
 ```
-
+Git print diff between mybranch and master in the file 'myfile.cs'
+```
+$ git diff mybranch..master -- myfile.cs
+```
 
 ### App signing management
 Get a glance at the identities ("SHA1" "Name") <br>
