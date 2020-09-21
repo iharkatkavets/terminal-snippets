@@ -18,9 +18,8 @@
 
 ---
 
-### $ base64
 <details>
-  <summary>expand</summary>
+  <summary>$ base64</summary>
   
     $ base64 -i IN_FILE_PATH -o OUT_FILE_PATH
    Examples<br>
@@ -126,9 +125,9 @@ $ Verify password:
 $ rsync -v "$(basename `pwd`).zip" USER_NAME@SERVER:PATH && rm -rvf "$(basename `pwd`).zip"
 $ Password:
 ```
-### $ find
+
 <details>
-  <summary>expand</summary>
+  <summary>$ find</summary>
   
    Find files matched pattern `*.ipa` and extract to directory named `filename.unz` <br/>
     ```$ find . -name '*.ipa' -exec sh -c 'unzip -d `basename {}`.unz {}' \; ``` <br/>
