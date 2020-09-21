@@ -127,26 +127,26 @@ $ rsync -v "$(basename `pwd`).zip" USER_NAME@SERVER:PATH && rm -rvf "$(basename 
 $ Password:
 ```
 ### $ find
-Find files matched pattern `*.ipa` and extract to directory named `filename.unz` <br/>
-```$ find . -name '*.ipa' -exec sh -c 'unzip -d `basename {}`.unz {}' \; ``` <br/>
-Find files with matched patterh `*.txt` and copy to CGL-28825 directory <br/>
-```$ find ./UnitTests/ -name '*.txt' -exec sh -c 'cp {} CGL-28825/{}' \; ``` <br/>
-Find duplicated files in the directory <br>
-```$ find . ! -empty -type f -exec md5 {} + | sort | uniq -d``` <br/>
-Find in current folder the folders that were modified 182 days ago and delete them <br/>
-```$ find ./ -maxdepth 1 -type d -ctime +182 -exec rm -rfv {} \;``` <br/>
-Find in current folder PNG images and remove alpha channel. Adds white color to background. Overwrites!<br/>
-```bash
-$ find . -name '*.png' -exec sh -c 'convert {} -background white -alpha remove -alpha off {}' \;
-```
-Find all Info.plist files and add new boolean false value
-```bash
-$ find ./ -name Info.plist -exec sh -c '/usr/libexec/PlistBuddy -c "Add :test bool false" {}'  \; 
-```
-Find example
-```
-$ find ./ -type f -name '*.xib' -exec sed -i '' -e 's/<device[a-z=\"0-9_ ]*\/>/<device id=\"appleTV\" appearance=\"light\"\/>/g' {} +
-```
+<details>
+  <summary>expand</summary>
+  
+    Find files matched pattern `*.ipa` and extract to directory named `filename.unz` <br/>
+    `$ find . -name '*.ipa' -exec sh -c 'unzip -d `basename {}`.unz {}' \; ` <br/>
+    Find files with matched patterh `*.txt` and copy to CGL-28825 directory <br/>
+    `$ find ./UnitTests/ -name '*.txt' -exec sh -c 'cp {} CGL-28825/{}' \; ` <br/>
+    Find duplicated files in the directory <br>
+    `$ find . ! -empty -type f -exec md5 {} + | sort | uniq -d` <br/>
+    Find in current folder the folders that were modified 182 days ago and delete them <br/>
+    `$ find ./ -maxdepth 1 -type d -ctime +182 -exec rm -rfv {} \;` <br/>
+    Find in current folder PNG images and remove alpha channel. Adds white color to background. Overwrites!<br/>
+    `$ find . -name '*.png' -exec sh -c 'convert {} -background white -alpha remove -alpha off {}' \;`
+    Find all Info.plist files and add new boolean false value
+    `$ find ./ -name Info.plist -exec sh -c '/usr/libexec/PlistBuddy -c "Add :test bool false" {}'  \;`
+    Find example
+    `$ find ./ -type f -name '*.xib' -exec sed -i '' -e 's/<device[a-z=\"0-9_ ]*\/>/<device id=\"appleTV\" appearance=\"light\"\/>/g' {} +`
+</details>
+
+---
 
 ### $ sed
 Find all \*.txt files in dir and execute sed without backuping <br>
