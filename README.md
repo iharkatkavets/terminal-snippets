@@ -168,6 +168,16 @@ $ echo '"title": "Bench press"' | sed -ne 's/"title": \([a-z]+\)*//p'
 |   |   |   |
 |   |   |   |
 
+<details>
+  <summary>$ top</summary>
+  
+   Run `top` in non-interactive(batch) mode <br/>
+    ```$ top -l 1``` <br/>
+</details>
+
+---
+
+
 ### $ curl
 Download and find and count occurances of `regex_pattern` in response (by adding new line `\\\n`)
 ```bash
