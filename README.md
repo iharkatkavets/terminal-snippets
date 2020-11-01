@@ -177,6 +177,15 @@ $ echo '"title": "Bench press"' | sed -ne 's/"title": \([a-z]+\)*//p'
 
 ---
 
+<details>
+  <summary>$ clan</summary>
+  
+   Compile single `main.m` file to executable `prog` <br/>
+    ```$ clang -fobjc-arc main.m -o prog1``` <br/>
+</details>
+
+---
+
 
 ### $ curl
 Download and find and count occurances of `regex_pattern` in response (by adding new line `\\\n`)
