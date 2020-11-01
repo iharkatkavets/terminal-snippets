@@ -25,3 +25,6 @@ Useful keyboard shortcuts for Xcode IDE for everyday usage
 ## Simulator
 * Cmd+Shift+H - simulate pressing Home button
 
+## TEST
+* `^ ⌥ ⌘ U` - run single test under cursor
+
