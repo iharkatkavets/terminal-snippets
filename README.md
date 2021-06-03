@@ -141,6 +141,7 @@ $ Password:
     `$ find . -name '*.png' -exec sh -c 'convert {} -background white -alpha remove -alpha off {}' \;` <br/>
    Find all Info.plist files and add new boolean false value <br/>
     `$ find ./ -name Info.plist -exec sh -c '/usr/libexec/PlistBuddy -c "Add :test bool false" {}'  \;` <br/>
+    `$ find ./ -name Info.plist -exec sh -c '/usr/libexec/PlistBuddy -c "Add :my_key string \"\"" {}' \;` <br/>
    Find example <br/>
     `$ find ./ -type f -name '*.xib' -exec sed -i '' -e 's/<device[a-z=\"0-9_ ]*\/>/<device id=\"appleTV\" appearance=\"light\"\/>/g' {} +` <br/>
     Resize *\*.png* images to size 800x600 and append to new file suffix 800x600.png<br/>
