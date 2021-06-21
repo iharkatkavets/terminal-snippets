@@ -156,7 +156,7 @@ $ Password:
   <summary>$ jq</summary>
   
    Remove new lines from json <br/>
-    ```$ jq -c .<br/>
+    ```$ jq -c .
     ```
 </details>
 
