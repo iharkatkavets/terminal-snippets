@@ -157,6 +157,9 @@ $ Password:
   
    Remove new lines from json <br/>
     ```$ jq -c .
+    ```<br/>
+   Pretty print JSON <br/>
+    ```$ jq '.'
     ```
 </details>
 
