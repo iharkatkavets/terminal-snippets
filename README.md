@@ -152,6 +152,16 @@ $ Password:
 
 ---
 
+<details>
+  <summary>$ jq</summary>
+  
+   Remove new lines from json <br/>
+    ```$ jq -c .<br/>
+    ```
+</details>
+
+---
+      
 ### $ sed
 Find all \*.txt files in dir and execute sed without backuping <br>
 ```bash
