@@ -60,6 +60,18 @@ Git print diff between mybranch and master in the file 'myfile.cs'
 ```
 $ git diff mybranch..master -- myfile.cs
 ```
+Find the file in the history
+```
+$ git log --all --name-status  -- "**/filename.*"
+```
+Show the file changes in the commit 
+```
+$ git show <SHA> -- <path-to-file>
+```
+Restore the file in the working copy
+```
+$ git checkout <SHA>^ -- <path-to-file>
+```
 
 ### App signing management
 Get a glance at the identities ("SHA1" "Name") <br>
