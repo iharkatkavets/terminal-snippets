@@ -54,7 +54,7 @@ $ git cherry-pick --continue
 ```
 Git find "string" in the history of diffs
 ```bash
-$ git log -S string_for_searching
+$ git log -p -S string_for_searching
 ```
 Git print diff between mybranch and master in the file 'myfile.cs'
 ```
