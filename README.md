@@ -72,6 +72,10 @@ Restore the file in the working copy
 ```
 $ git checkout <SHA>^ -- <path-to-file>
 ```
+Apply reverted changes from a commit
+```bash
+$ git show <SHA> -- <path-to-file> | git apply -3 --whitespace=fix -R
+```
 
 ### App signing management
 Get a glance at the identities ("SHA1" "Name") <br>
