@@ -165,6 +165,16 @@ $ Password:
     Find in `Info.plist` file and print 1 line *A*fter<br/>
     `$ find ./ios/ -name 'Info.plist' -exec sh -c 'grep -A 1 -ir receiver_id {}' \;`
 </details>
+      
+---
+
+<details>
+  <summary>$ ls</summary>
+  
+   list files in one line <br/>
+    ```$ ls | tr "\n" " "
+    ```<br/>
+</details>
 
 ---
 
