@@ -141,6 +141,15 @@ $ Verify password:
 $ rsync -v "$(basename `pwd`).zip" USER_NAME@SERVER:PATH && rm -rvf "$(basename `pwd`).zip"
 $ Password:
 ```
+  
+  <details>
+  <summary>$ convert</summary>
+  
+   Resize the image <br/>
+    ```$ convert image.png -resize 33% resized.png ``` <br/>
+</details>
+      
+---
 
 <details>
   <summary>$ find</summary>
