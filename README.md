@@ -39,13 +39,15 @@
 
 ---
 
-### Git
-Clean up submodules <br>
+  <details>
+  <summary>$ git</summary>
+    
+  Clean up submodules <br>
 ```bash 
 $ git submodule foreach --recursive git clean -xfd
 $ git submodule update -f --init --recursive --remote
 ```
-Cherry pick diffs which are contained only in the `ANY_BRANCH`
+Cherry pick diffs which are contained only in the `ANY_BRANCH`<br>
 ```bash
 $ git cherry -v master ANY_BRANCH > only-feature-chages.txt
 $ git cherry-pick 64f0e89e718aa034704c5895f9de858afae9da97 f415a7d8c1599021761bab852109ef6389918...
@@ -76,6 +78,12 @@ Apply reverted changes from a commit
 ```bash
 $ git show <SHA> -- <path-to-file> | git apply -3 --whitespace=fix -R
 ```
+  Add custom ssh identity file to the repository
+  ```bash
+  $ git config core.sshCommand "ssh -i ~/.ssh/not_default_id_rsa -F /dev/null"
+</details>
+
+---
 
 ### App signing management
 Get a glance at the identities ("SHA1" "Name") <br>
