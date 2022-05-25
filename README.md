@@ -152,6 +152,16 @@ $ rsync -v "$(basename `pwd`).zip" USER_NAME@SERVER:PATH && rm -rvf "$(basename 
 $ Password:
 ```
   
+  
+  <details>
+  <summary>$ swiftc</summary>
+  
+   Compilte swift file with generating dSym file <br/>
+    ```$ swiftc -g file.swift ``` <br/>
+</details>
+      
+---
+  
   <details>
   <summary>$ convert</summary>
   
