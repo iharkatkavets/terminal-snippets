@@ -157,11 +157,13 @@ $ Password:
   <summary>$ swiftc</summary>
   
    Compilte swift file with generating dSym file <br/>
-    ```$ swiftc -g file.swift ``` <br/>
+    ```$ swiftc -g file.swift``` <br/>
    Run executable using lldb debugger<br/>
-    ```$ lldb file ``` <br/>
+    ```$ lldb file``` <br/>
    Load dSym file <br/>
-    ```$ add-dsym <PathTo.dSYM> ``` <br/>
+    ```(lldb) add-dsym <PathTo.dSYM>``` <br/>
+   Print backtrace <br/>
+    ```(lldb) thread backtrace``` <br/>
 </details>
       
 ---
