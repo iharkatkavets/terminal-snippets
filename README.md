@@ -158,6 +158,10 @@ $ Password:
   
    Compilte swift file with generating dSym file <br/>
     ```$ swiftc -g file.swift ``` <br/>
+   Run executable using lldb debugger<br/>
+    ```$ lldb file ``` <br/>
+   Load dSym file <br/>
+    ```$ add-dsym <PathTo.dSYM> ``` <br/>
 </details>
       
 ---
