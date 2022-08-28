@@ -38,6 +38,26 @@
 </details>
 
 ---
+  
+<details>
+  <summary>$ convert</summary>
+  
+   Resize the image <br/>
+    ```$ convert image.png -resize 33% resized.png ``` <br/>
+</details>
+      
+---
+  
+<details>
+  <summary>$ echo</summary>
+
+   List all files matching pattern in current directory<br>
+     
+     $ echo *.txt
+     $ echo .*
+</details>
+
+---
 
 <details>
 <summary>$ git</summary>
@@ -164,15 +184,6 @@ $ Password:
     ```(lldb) add-dsym <PathTo.dSYM>``` <br/>
    Print backtrace <br/>
     ```(lldb) thread backtrace``` <br/>
-</details>
-      
----
-  
-  <details>
-  <summary>$ convert</summary>
-  
-   Resize the image <br/>
-    ```$ convert image.png -resize 33% resized.png ``` <br/>
 </details>
       
 ---
