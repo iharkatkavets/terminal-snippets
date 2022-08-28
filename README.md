@@ -228,7 +228,7 @@ $ echo '"title": "Bench press"' | sed -ne 's/"title": \([a-z]+\)*//p'
 ---
 
 <details>
-  <summary>$ clan</summary>
+  <summary>$ clang</summary>
   
    Compile single `main.m` file to executable `prog` <br/>
     ```$ clang -fobjc-arc main.m -o prog1``` <br/>
@@ -236,30 +236,50 @@ $ echo '"title": "Bench press"' | sed -ne 's/"title": \([a-z]+\)*//p'
 
 ---
 
+<details>
+  <summary>$ printf</summary>
+  
+   Tool for formatted output <br/>
+    ```$ printf '%-10.10s = %4.2f\n' 'Gigahertz' 1.92735``` <br/>
+</details>
 
-### $ curl
-Download and find and count occurances of `regex_pattern` in response (by adding new line `\\\n`)
-```bash
-$ curl  -v --silent 'http://awesome.com' 2>&1 | sed $'s/regex_pattern/regex_pattern\\\n/g' | grep -c 'regex_pattern'
-```
-An example with query parameters <br/>
-```bash
-curl -X POST -H "Accept: application/json" -H "Authorization: Basic xxxxxxxx" -H "Content-Type: application/x-www-form-urlencoded" --data 'grant_type=clone&refresh_token=xxx-xxx&scope=client'  'https://SERVER_URL'
-```
+---
 
+<details>
+  <summary>$ curl</summary>
+  
+   Download and find and count occurances of `regex_pattern` in response (by adding new line `\\\n`)
+   ```bash
+   $ curl  -v --silent 'http://awesome.com' 2>&1 | sed $'s/regex_pattern/regex_pattern\\\n/g' | grep -c 'regex_pattern'
+   ```
+   An example with query parameters <br/>
+   ```bash
+   curl -X POST -H "Accept: application/json" -H "Authorization: Basic xxxxxxxx" -H "Content-Type: application/x-www-form-urlencoded" --data          'grant_type=clone&refresh_token=xxx-xxx&scope=client'  'https://SERVER_URL'
+   ```
+</details>
+
+---
+
+<details>
+  <summary>$ grep</summary>
+  
+   Extract substring from string:
+   ```bash
+   $ grep -o -E '^[H](H|T|t)+-[0-9]{4}'
+   ```
+   Extract `123` from `versionCode 123`
+   ```bash
+   $ cat build.gradle | grep 'versionCode ' | grep -o -E '[0-9]+'
+   ```
+   Extract `"1.2.3"` from `versionName "1.2.3"`
+   ```bash
+   $ cat build.gradle | grep 'versionName ' | grep -o -E '\"[0-9].[0-9].[0-9]\"'
+   ```
+</details>
+
+---
 ### $ grep
-Extract substring from string:
-```bash
-$ grep -o -E '^[H](H|T|t)+-[0-9]{4}'
-```
-Extract `123` from `versionCode 123`
-```bash
-$ cat build.gradle | grep 'versionCode ' | grep -o -E '[0-9]+'
-```
-Extract `"1.2.3"` from `versionName "1.2.3"`
-```bash
-$ cat build.gradle | grep 'versionName ' | grep -o -E '\"[0-9].[0-9].[0-9]\"'
-```
+
 
 ### $ rsync
 Sync images(png, PNG, jpg, JPG)  in 2 local folders
@@ -337,10 +357,6 @@ Show the contents of the local variable bar formatted as hex.
 (lldb) frame variable --format x bar
 (lldb) fr v -f x bar
 ```
-
-### Android. 
-Grep logs from the Android device
-`$ ~/Library/Android/sdk/platform-tools/adb logcat | grep BUNDLE_ID`
 
 ### FFMPEG
 Cut video of [duration]
