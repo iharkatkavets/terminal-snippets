@@ -293,6 +293,9 @@ Pretty print JSON string
 ```bash
 $ echo '{"foo": "lorem", "bar": "ipsum"}' | python -m json.tool
 ```
+```bash
+echo $(python3 -c "import sys,json; print(json.load(sys.stdin)['fields']['summary'])" <<< ${RESPONSE})
+```
 Pretty print XML string
 ```bash
 $ echo '<root><foo a="b">lorem</foo><bar value="ipsum" /></root>' | xmllint --format -
