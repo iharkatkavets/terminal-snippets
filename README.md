@@ -105,6 +105,7 @@
   Log all particular file commits
   ```bash
   $ git log --follow -- FILE_PATH
+  ```
 </details>
   
 
