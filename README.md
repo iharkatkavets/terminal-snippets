@@ -102,6 +102,9 @@
   ```bash
   $ git config core.sshCommand "ssh -i ~/.ssh/not_default_id_rsa -F /dev/null"
   ```
+  Log all particular file commits
+  ```bash
+  $ git log --follow -- FILE_PATH
 </details>
   
 
@@ -278,7 +281,6 @@ $ echo '"title": "Bench press"' | sed -ne 's/"title": \([a-z]+\)*//p'
 </details>
 
 ---
-### $ grep
 
 
 ### $ rsync
