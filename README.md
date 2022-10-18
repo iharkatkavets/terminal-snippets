@@ -202,25 +202,30 @@ $ Password:
 </details>
 
 ---
-      
-### $ sed
-Find all \*.txt files in dir and execute sed without backuping <br>
-```bash
-$ find ./UnitTests/ -type f -name '*.txt' -exec sed -i '' -e 's/video_url_android/dash/g' {} +
-```
-Extract minor number from version
-```bash
-$ echo '1.2.3' | sed 's/\([0-9]\).[0-9].[0-9]/\1/'
-```
-Extract substring `"Bench press"` from a string `"title": "Bench press"` 
-```bash
-$ echo '"title": "Bench press"' | sed -ne 's/"title": \([a-z]+\)*//p'
-```
-|   |   |   |
-|---|---|---|
-|`[[:space:]]*`|match the whitespace characters `<tab>` and `<space>`|   |
-|   |   |   |
-|   |   |   |
+
+<details>
+  <summary>$ sed</summary>
+  
+  Find all \*.txt files in dir and execute sed without backuping <br>
+  ```bash
+  $ find ./UnitTests/ -type f -name '*.txt' -exec sed -i '' -e 's/video_url_android/dash/g' {} +
+  ```
+  Extract minor number from version
+  ```bash
+  $ echo '1.2.3' | sed 's/\([0-9]\).[0-9].[0-9]/\1/'
+  ```
+  Extract substring `"Bench press"` from a string `"title": "Bench press"` 
+  ```bash
+  $ echo '"title": "Bench press"' | sed -ne 's/"title": \([a-z]+\)*//p'
+  ```
+  |   |   |   |
+  |---|---|---|
+  |`[[:space:]]*`|match the whitespace characters `<tab>` and `<space>`|   |
+  |   |   |   |
+  |   |   |   |
+</details>
+
+---
 
 <details>
   <summary>$ top</summary>
