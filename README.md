@@ -223,6 +223,11 @@ $ Password:
   |`[[:space:]]*`|match the whitespace characters `<tab>` and `<space>`|   |
   |   |   |   |
   |   |   |   |
+  
+  Extract version from `podspec` file
+  ```bash
+  $ sed -rn "s/.*([0-9]+\.[0-9]+\.[0-9]+).*/\1/p" [FILE].podspec
+  ```
 </details>
 
 ---
