@@ -289,6 +289,10 @@ $ Password:
    ```bash
    $ cat build.gradle | grep 'versionName ' | grep -o -E '\"[0-9].[0-9].[0-9]\"'
    ```
+   Extract URL from `file`
+   ```bash
+   $ grep -o -E 'https://iharkatkavets.com/[?=;&_a-z0-9-]+' ../photos.txt
+   ```
 </details>
 
 ---
