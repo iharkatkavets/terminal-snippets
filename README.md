@@ -228,6 +228,10 @@ $ Password:
   ```bash
   $ sed -rn "s/.*([0-9]+\.[0-9]+\.[0-9]+).*/\1/p" [FILE].podspec
   ```
+  Replace string from the stdin input
+  ```bash
+  $ sed 's/\&amp;/\&/g'
+  ```
 </details>
 
 ---
