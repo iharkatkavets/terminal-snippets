@@ -175,7 +175,10 @@ $ Password:
     Resize *\*.png* images to size 800x600 and append to new file suffix 800x600.png<br/>
     `$ find ./ -name '*.png' -exec sh -c 'convert {} -resize 800x600! {}%.*_800x600.png' \;`
     Find in `Info.plist` file and print 1 line *A*fter<br/>
-    `$ find ./ios/ -name 'Info.plist' -exec sh -c 'grep -A 1 -ir receiver_id {}' \;`
+    `$ find ./ios/ -name 'Info.plist' -exec sh -c 'grep -A 1 -ir receiver_id {}' \;`<br/>
+    Find unique files in directory and copy in another<br/>
+    ```$ find ./ -type f -exec md5sum {} + | sort | awk '!c[substr($0, 1, 32)]++' | awk '{print $2}' | xargs -I _ cp _ another_dir
+    ```
 </details>
       
 ---
