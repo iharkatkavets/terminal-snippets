@@ -1,5 +1,17 @@
 # 💻 Terminal Snippets
 
+
+Variables
+
+Strip the directory path from a shell variable string and leave the last part of the path (the filename)
+```
+$ FILE=${PATHTOFILE##*/}
+```
+Strip the file name from a shell variable string and leave the dir part of the path
+```
+$ DIR=${PATHTOFILE%/*}
+```
+
 ### Ediff shortcuts
 <details>
   <summary>Ediff shortcuts expand</summary>
