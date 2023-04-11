@@ -312,6 +312,10 @@ $ Password:
    ```bash
    $ grep -o -E 'https://iharkatkavets.com/[?=;&_a-z0-9-]+' ../photos.txt
    ```
+   Exclude directories during search
+   ```bash
+   $ grep --exclude-dir=Pods --exclude-dir=fastlane -ir 'https://' ./
+   ```
 </details>
 
 ---
