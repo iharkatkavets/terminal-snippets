@@ -322,7 +322,8 @@ $ Password:
    ```
    Find multiple patterns
    ```
-   $ grep -e 'pattern1' -e 'pattern2' ./
+   $ grep -e 'pattern1' -e 'pattern2' file
+   ```
 </details>
 
 ---
