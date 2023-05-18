@@ -314,12 +314,15 @@ $ Password:
    ```
    Extract URL from `file`
    ```bash
-   $ grep -o -E 'https://iharkatkavets.com/[?=;&_a-z0-9-]+' ../photos.txt
+   $ grep -o -E 'https://url.com/[?=;&_a-z0-9-]+' ../photos.txt
    ```
    Exclude directories during search
    ```bash
    $ grep --exclude-dir=Pods --exclude-dir=fastlane -ir 'https://' ./
    ```
+   Find multiple patterns
+   ```
+   $ grep -e 'pattern1' -e 'pattern2' ./
 </details>
 
 ---
