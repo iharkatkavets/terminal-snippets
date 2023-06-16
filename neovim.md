@@ -35,11 +35,3 @@ Navigate to adjacent window
 ```
 Ctrl+w,[i,j,h,l]
 ```
-Swap the order down
-```
-Ctrl+W,J
-```
-Swap the order up
-```
-Ctrl+W,K
-```
