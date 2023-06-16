@@ -25,3 +25,11 @@
 <br>`<leader>fb` - find buffers
 <br>`<leader>ps` - grep string
 <br>`C-p` - Git files
+
+## harpoon
+<br>`<leader>a` - harpoon the file
+<br>`<Ctrl+e>` - open quick menu
+<br>`<C-h>` - fast switch to 1
+<br>`<C-t>` - fast switch to 2
+<br>`<C-n>` - fast switch to 3
+<br>`<C-s>` - fast switch to 4
