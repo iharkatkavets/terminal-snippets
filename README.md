@@ -118,6 +118,10 @@ $ DIR=${PATHTOFILE%/*}
   ```bash
   $ git log --follow -- FILE_PATH
   ```
+  Revert 3 last commits in with one commit
+  ```
+  $ git revert --no-commit HEAD~3..
+  ```
 </details>
   
 
