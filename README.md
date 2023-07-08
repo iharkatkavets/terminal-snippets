@@ -195,6 +195,8 @@ $ Password:
     Find unique files in directory and copy in another<br/>
     ```$ find ./ -type f -exec md5sum {} + | sort | awk '!c[substr($0, 1, 32)]++' | awk '{print $2}' | xargs -I _ cp _ another_dir
     ```
+    Find file in the current directory which contains the multiple strings<br/>
+    ```$find ./ -type f -exec grep -l 'STR1' {} \; | xargs grep -l 'STR2' | xargs grep -l 'STR3' ```
 </details>
       
 ---
