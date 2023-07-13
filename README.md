@@ -254,7 +254,10 @@ $ Password:
   ```
   Replace digits A0 to "A0",
   ```bash
-  $ pbpaste| sed 's/\([0-9A-F][0-9A-F]\) /"\1",/g' 
+  $ pbpaste| sed 's/\([0-9A-F][0-9A-F]\) /"\1",/g'
+  ```
+  ```
+  $ pbpaste| sed 's/\([0-9A-F]\{2,3\}\)[[:space:]]\{0,1\}/"\1",/g'
   ```
 </details>
 
