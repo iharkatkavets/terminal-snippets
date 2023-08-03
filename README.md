@@ -336,6 +336,27 @@ $ Password:
 
 ---
 
+<details>
+  <summary>$ nc</summary>
+  
+   Establish socket connection
+   ```bash
+   nc IP PORT 
+   ```
+</details>
+
+---
+
+<details>
+  <summary>$ telnet</summary>
+  
+   Establish socket connection
+   ```bash
+   telnet IP PORT 
+   ```
+</details>
+
+---
 
 ### $ rsync
 Sync images(png, PNG, jpg, JPG)  in 2 local folders
