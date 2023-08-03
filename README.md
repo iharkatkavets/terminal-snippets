@@ -358,6 +358,17 @@ $ Password:
 
 ---
 
+<details>
+  <summary>$ nettop</summary>
+  
+   Listen the socket connection created by process with PID
+   ```bash
+   nettop -n -p PID
+   ```
+</details>
+
+---
+
 ### $ rsync
 Sync images(png, PNG, jpg, JPG)  in 2 local folders
 ```bash
