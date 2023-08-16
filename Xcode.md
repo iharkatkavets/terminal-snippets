@@ -20,3 +20,8 @@ ${PROJECT_DIR}/scripts/writeplist.py -i "${BRAND_PATH}/Colors.plist" -o "${PROJ_
 
 ${PROJECT_DIR}/scripts/writeplist.py -i "${BRAND_PATH}/Info.plist" -o "${PROJ_RESOURCES_PATH}/Info.plist"
 ```
+
+Print the application's home directory if the app is running in Simulator
+```
+po NSHomeDirectory()
+```
