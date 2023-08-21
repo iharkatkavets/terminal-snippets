@@ -259,6 +259,10 @@ $ Password:
   ```
   $ pbpaste| sed 's/\([0-9A-F]\{2,3\}\)[[:space:]]\{0,1\}/"\1",/g'
   ```
+  Convert md5 sum string to list of bytes in hex format
+  ```bash
+  md5 -q Tests/Resources/1Mb | sed 's/\([0-9a-z][0-9a-z]\)/0x\1,/g'
+  ```
 </details>
 
 ---
