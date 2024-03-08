@@ -5,6 +5,7 @@ Create project
 mkdir my-electron-app && cd my-electron-app
 npm init
 ```
+Type `main.js` as `entry point:` instead of `index.js`<br>
 Disable tests by adding line to `package.json`
 ```json
 {
@@ -69,5 +70,20 @@ app.whenReady().then(() => {
   createWindow()
 })
 ```
+Close app if all windows are closed
+```js
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') app.quit()
+})
+```
+Liste `activate` event to create window if previous all were closed 
+```js
+app.whenReady().then(() => {
+  createWindow()
 
+  app.on('activate', () => {
+    if (BrowserWindow.getAllWindows().length === 0) createWindow()
+  })
+})
+```
 
