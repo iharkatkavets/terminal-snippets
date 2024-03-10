@@ -127,6 +127,15 @@ $ DIR=${PATHTOFILE%/*}
 
 ---
 
+<details>
+  <summary>$ hexdump</summary>
+  
+  Generate 16 `hex` bytes<br>
+  ```
+  hexdump -vn16 -e'4/4 "%08X" 1 "\n"' /dev/urandom
+  ```
+</details>
+
 
 ## Bash
 ### Files editing 
