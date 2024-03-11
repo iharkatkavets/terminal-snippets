@@ -86,4 +86,20 @@ app.whenReady().then(() => {
   })
 })
 ```
+To open `Developer Tools` at app lauchn add next line to `createWindow` function
+```js
+win.webContents.openDevTools();
+```
+Add `renderer.js` file to improve sequre, performance and stability
+```js
+window.onload = () => {                                                                 
+    const button = document.getElementById('myButton');                                                                                                            
+                                                                                        
+    async function fetchData() {                                                                                                                        
+      console.log("Button press");                                                                                                                 
+    }                                                                                   
+                                                                                        
+    fetchButton.addEventListener('click', fetchData);                                   
+};                                                                                      
+```
 
