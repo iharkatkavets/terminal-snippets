@@ -3,4 +3,4 @@
 <br>`:h rtp` - print run time paths
 <br>`:so %` - source the config
 <br>`:nmap` - show keymaps
-
+<br>`:nmap <leader>` - leader mappings
