@@ -382,6 +382,25 @@ $ Password:
 
 ---
 
+<details>
+  <summary>$ venv</summary>
+  
+   Create python virtual envrironment
+   ```bash
+   python3 -m venv venv
+   ```
+   Activate virtual environment
+   ```bash
+  source env/bin/activate
+  ```
+  Stop virtual environment
+  ```bash
+  deactivate
+  ```
+</details>
+
+---
+
 ### $ rsync
 Sync images(png, PNG, jpg, JPG)  in 2 local folders
 ```bash
