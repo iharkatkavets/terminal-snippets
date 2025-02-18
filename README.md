@@ -122,6 +122,10 @@ $ DIR=${PATHTOFILE%/*}
   ```
   $ git revert --no-commit HEAD~3..
   ```
+  Use custom key
+  ```bash
+  git -c core.sshCommand="ssh -i ~/.ssh/mycustomkey" pull
+  ```
 </details>
   
 
