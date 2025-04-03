@@ -495,6 +495,9 @@ Create gif image from movie
 ```
 $ ffmpeg -ss 30 -t 3 -i input.mp4 -vf "fps=10,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 output.gif
 ```
+```
+ffmpeg -ss 00:00:39.000 -i Screen\ Recording\ .mov -pix_fmt rgb24 -r 10 -s 320x240 -t 00:00:10.000 output.gif
+```
 * This example will skip the first 30 seconds (-ss 30) of the input and create a 3 second output (-t 3).
 * fps filter sets the frame rate. A rate of 10 frames per second is used in the example.
 * scale filter will resize the output to 320 pixels wide and automatically determine the height while preserving the aspect ratio. The lanczos scaling algorithm is used in this example.
